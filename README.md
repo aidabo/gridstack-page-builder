@@ -17,4 +17,4 @@ Build page and layout for react components
 
 ![Sample 1](https://dnicugzydez8x.cloudfront.net/60-think-prd/2025/07/image-28.png)
 
-![sample of video](https://60-think.com/link/gridstack-layout)
+![sample of video](https://dnicugzydez8x.cloudfront.net/60-think-prd/2025/07/Vite---React---TS---Google-Chrome-2025-07-29-23-37-47.mp4)
