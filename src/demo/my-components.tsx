@@ -1,12 +1,23 @@
 import { ComponentMap } from "gridstack-page";
 import { ComponentProps } from "gridstack-page";
 
-import Image from "./widgets/Image";
-
 const useComponentProvider = () => {
+
   const getNewComponentMap = (): ComponentMap => {
+
     return {
-      Image,
+      Image: function Image({ src, title }: { src: string; title?: string }) {
+        return (
+          <div className="flex items-center justify-center p-0">
+            <img
+              onClick={() => alert(title || "this is a image")}
+              src={src}
+              alt="Widget"
+              className="max-w-full max-h-full object-contain"
+            />
+          </div>
+        );
+      },
 
       ImageBlurred: ({
         src,
@@ -117,7 +128,7 @@ const useComponentProvider = () => {
   const getNewComponentProps = (): ComponentProps => {
     return {
       Image: {
-        src: "https://dnicugzydez8x.cloudfront.net/2025/03/aws-service-6.png",
+        src: "https://dnicugzydez8x.cloudfront.net/60-think-prd/2025/07/image-26.png",
         title: "This is Image",
       },
 
