@@ -1,15 +1,17 @@
-import { StackPage } from "gridstack-page";
+import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+
+import { StackPage } from "gridstack-page";
 import {
   PageProps,
   SaveLayoutFn,
   LoadLayoutFn,
   GoBackListFn,
 } from "gridstack-page";
+import "gridstack-page/styles"
+
 import { useLayoutStore } from "./api";
 import { useComponentProvider } from "./my-components";
-import { useState } from "react";
-import "gridstack-page/styles"
 
 export default function StackPageEdit(props: {mode: string}) {
   const { pageid } = useParams<{ pageid: string }>();
